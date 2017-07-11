@@ -36,7 +36,7 @@ currentCycle.forEach(report => {
     .then(res => { return res.json() })
     .then(body => {
         document.querySelector('body ul li.' + report.name + ' span')
-        .insertAdjacentText('beforeend', body.bugs.length);
+        .insertAdjacentText('beforeend', numeral(body.bugs.length).format('0,0'));
     });
 })
 
