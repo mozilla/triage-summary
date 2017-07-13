@@ -17,7 +17,7 @@ var currentCycle = [
     {title: "Unassigned Untriaged Bugs in Current Cycle",
      name: "unassigned",
      url: unassigned},
-    {title: "Untriaged Bugs in Current Cycle Marked as Affecting FFx 56 <code>status_firefox56 = `affected`</code>",
+    {title: "Untriaged Bugs in Current Cycle Affecting Next Release <code>status_firefox56 = affected</code>",
      name: "known",
      url: known},
     {title: "Untriaged Enhancement Requests in Current Cycle",
