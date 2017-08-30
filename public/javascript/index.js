@@ -6,10 +6,6 @@ const known = "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,s
 
 const enhancements = "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,status&bug_severity=enhancement&chfield=%5BBug%20creation%5D&chfieldfrom=2017-08-02&chfieldto=NOW&email1=intermittent-bug-filer%40mozilla.bugs&emailreporter1=1&emailtype1=notequals&f1=flagtypes.name&o1=notequals&priority=--&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Toolkit&resolution=---&v1=needinfo%3F";
 
-const noassignee = "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,status&chfield=%5BBug%20creation%5D&chfieldfrom=2016-06-01&chfieldto=Now&email1=nobody%40mozilla.org&emailassigned_to1=1&emailtype1=exact&f1=delta_ts&f2=flagtypes.name&known_name=Orphaned%20P1s&o1=lessthan&o2=notsubstring&priority=P1&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Toolkit&resolution=---&v1=-2w&v2=needinfo%3F";
-
-const stalled = "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,status&chfield=%5BBug%20creation%5D&chfieldfrom=2016-06-01&chfieldto=Now&email1=nobody%40mozilla.org&emailassigned_to1=1&emailtype1=notequals&f1=delta_ts&f2=flagtypes.name&o1=lessthan&o2=notsubstring&priority=P1&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Toolkit&resolution=---&v1=-2w&v2=needinfo%3F";
-
 var currentCycle = 'Firefox 57';
 
 var reports = [
@@ -24,13 +20,7 @@ var reports = [
      url: known},
     {title: "Untriaged Enhancement Requests in Current Cycle",
      name: "enhancements",
-     url: enhancements},
-    {title: "Orphaned P1s (No Assignee)",
-     name: "noassignee",
-     url: noassignee },
-    {title: "Stalled P1s (No Change in 2W)",
-     name: "stalled",
-     url: stalled}
+     url: enhancements}
 ];
 
 var first = true;
