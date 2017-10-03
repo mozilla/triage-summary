@@ -1,12 +1,12 @@
-const untriaged = "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,status&chfield=%5BBug%20creation%5D&chfieldfrom=2017-08-02&chfieldto=now&email1=intermittent-bug-filer%40mozilla.bugs&emailreporter1=1&emailtype1=notequals&f1=flagtypes.name&limit=0&o1=notequals&priority=--&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Toolkit&resolution=---&v1=needinfo%3F";
+const untriaged = "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,status&chfield=%5BBug%20creation%5D&chfieldfrom=2017-09-22&chfieldto=now&email1=intermittent-bug-filer%40mozilla.bugs&emailreporter1=1&emailtype1=notequals&f1=flagtypes.name&limit=0&o1=notequals&priority=--&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Toolkit&resolution=---&v1=needinfo%3F";
 
-const unassigned = "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,status&chfield=%5BBug%20creation%5D&chfieldfrom=2017-08-02&chfieldto=now&email1=intermittent-bug-filer%40mozilla.bugs&email2=nobody%40mozilla.org&emailassigned_to2=1&emailreporter1=1&emailtype1=notequals&emailtype2=exact&f1=flagtypes.name&limit=0&o1=notequals&priority=--&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Toolkit&resolution=---&v1=needinfo%3F";
+const unassigned = "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,status&chfield=%5BBug%20creation%5D&chfieldfrom=2017-09-22&chfieldto=now&email1=intermittent-bug-filer%40mozilla.bugs&email2=nobody%40mozilla.org&emailassigned_to2=1&emailreporter1=1&emailtype1=notequals&emailtype2=exact&f1=flagtypes.name&limit=0&o1=notequals&priority=--&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Toolkit&resolution=---&v1=needinfo%3F";
 
-const known = "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,status&chfield=%5BBug%20creation%5D&chfieldfrom=2017-08-02&chfieldto=NOW&email1=intermittent-bug-filer%40mozilla.bugs&emailreporter1=1&emailtype1=notequals&f1=flagtypes.name&f2=cf_status_firefox56&o1=notequals&o2=equals&priority=--&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Toolkit&resolution=---&v1=needinfo%3F&v2=affected";
+const known = "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,status&chfield=%5BBug%20creation%5D&chfieldfrom=2017-09-22&chfieldto=NOW&email1=intermittent-bug-filer%40mozilla.bugs&emailreporter1=1&emailtype1=notequals&f1=flagtypes.name&f2=cf_status_firefox57&o1=notequals&o2=equals&priority=--&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Toolkit&resolution=---&v1=needinfo%3F&v2=affected";
 
-const enhancements = "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,status&bug_severity=enhancement&chfield=%5BBug%20creation%5D&chfieldfrom=2017-08-02&chfieldto=NOW&email1=intermittent-bug-filer%40mozilla.bugs&emailreporter1=1&emailtype1=notequals&f1=flagtypes.name&o1=notequals&priority=--&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Toolkit&resolution=---&v1=needinfo%3F";
+const enhancements = "https://bugzilla.mozilla.org/rest/bug?include_fields=id,summary,status&bug_severity=enhancement&chfield=%5BBug%20creation%5D&chfieldfrom=2017-09-22&chfieldto=NOW&email1=intermittent-bug-filer%40mozilla.bugs&emailreporter1=1&emailtype1=notequals&f1=flagtypes.name&o1=notequals&priority=--&product=Core&product=Firefox&product=Firefox%20for%20Android&product=Firefox%20for%20iOS&product=Toolkit&resolution=---&v1=needinfo%3F";
 
-var currentCycle = 'Firefox 57';
+var currentCycle = 'Firefox 58';
 
 var reports = [
     {title: "Untriaged Bugs in Current Cycle",
@@ -15,7 +15,7 @@ var reports = [
     {title: "Unassigned Untriaged Bugs in Current Cycle",
      name: "unassigned",
      url: unassigned},
-    {title: "Untriaged Bugs in Current Cycle Affecting Next Release <code>status_firefox56 = affected</code>",
+    {title: "Untriaged Bugs in Current Cycle Affecting Next Release <code>status_firefox57 = affected</code>",
      name: "known",
      url: known},
     {title: "Untriaged Enhancement Requests in Current Cycle",
